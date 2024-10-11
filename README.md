@@ -1,1 +1,51 @@
 # 052204130_102202119
+### projectpartner文件目录结构
+- pages
+  - about_me
+    - about_me.js
+    - about_me.json
+    - about_me.wxml
+    - about_me.wxss
+  - conversations
+    - conversations.js
+    - conversations.json
+    - conversations.wxml
+    - conversations.wxss
+  - create_project
+    - create_project.js
+    - create_project.json
+    - create_project.wxml
+    - create_project.wxss
+  - home
+    - home.js
+    - home.json
+    - home.wxml
+    - home.wxss
+  - index
+    - index.js
+    - index.json
+    - index.wxml
+    - index.wxss
+  - login
+    - login.js
+    - login.json
+    - login.wxml
+    - login.wxss
+  - my_projects
+    - my_projects.js
+    - my_projects.json
+    - my_projects.wxml
+    - my_projects.wxss
+  - project_details
+    - project_details.js
+    - project_details.json
+    - project_details.wxml
+    - project_details.wxss
+- .eslintrc.js
+- app.js
+- app.json
+- app.wxss
+- project.config.json
+- project.private.config.js
+- README.md
+- sitemap.json
