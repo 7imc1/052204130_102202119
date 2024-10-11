@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<image src="{{userInfo.avatarUrl}}"></image>
+<view>{{userInfo.nickName}}</view>
+
+<input type="text" placeholder="请输入账号" bindinput="getZh"/>
+<input type="text" placeholder="请输入密码" bindinput="getPassword"/>
+<input type="text" placeholder="确认密码" bindinput="getPassword2"/>
+<input type="text" placeholder="请输入你的学校" bindinput="getSchool"/>
+<input type="text" placeholder="请输入你的专业" bindinput="getProfession"/>
+<input type="text" placeholder="请输入你的学号" bindinput="getStunum"/>
+
+<button wx:if="{{!userInfo}}" bind:tap="getUserProfile">授权</button>
+
+<button type="primary" bind:tap="zhuce">注册</button>

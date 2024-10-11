@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="header">发现</view>
+  <view class="recommend-projects">
+    <view class="section-title">推荐项目</view>
+    <view class="project-list">
+      <block wx:for="{{projects}}" wx:key="name">
+        <view class="project-item">
+          <text class="project-name">{{item.name}}</text>
+          <text class="project-leader">{{item.leader}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="recommend-partners">
+    <view class="section-title">推荐伙伴</view>
+    <view class="partner-list">
+      <block wx:for="{{partners}}" wx:key="username">
+        <view class="partner-item">
+          <text class="partner-username">{{item.username}}</text>
+          <text class="partner-major">{{item.major}}</text>
+          <text class="partner-grade">{{item.grade}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="bottom-nav">
+    <button bindtap="navigateToAboutMe">关于我</button>
+    <button bindtap="navigateToMyProjects">我的项目</button>
+    <button bindtap="navigateToConversations">会话</button>
+  </view>
+</view>

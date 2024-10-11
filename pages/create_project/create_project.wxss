@@ -1,0 +1,37 @@
+/* pages/create_project/create_project.wxss */
+.container {
+  padding: 50px;
+}
+
+.form-item {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.form-item text {
+  width: 64px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-item input,
+.form-item textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-item textarea {
+  height: 100px; /* Adjust as necessary */
+}
+
+.form-item button {
+  background-color: #1aad19;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}

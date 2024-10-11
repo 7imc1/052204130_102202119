@@ -1,0 +1,15 @@
+<!-- pages/project_details/project_details.wxml -->
+<view class="container">
+  <view class="project-list">
+    <block wx:if="{{projects}}" wx:key="index">
+      <view class="project-item">
+        <view class="project-name">项目名称：{{projects.name}}</view>
+        <view class="project-number">项目人数：{{projects.number}}</view>
+        <view class="project-description">项目描述：{{projects.description}}</view>
+        <view class="project-requirements">项目需求：{{projects.requirements}}</view>
+        <!-- 可以根据需要显示更多项目信息 -->
+      </view>
+    </block>
+  </view>
+  <button class="back-btn" bindtap="goBack">返回</button>
+</view>

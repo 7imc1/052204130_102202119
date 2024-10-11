@@ -1,0 +1,55 @@
+/* pages/my_projects/my_projects.wxss */
+.container {
+  padding: 90px;
+  position: relative;  
+}
+
+.create-project-btn {
+  position: absolute; /* 绝对定位 */
+  top: 50px; /* 距离顶部20px */
+  right: 20px; /* 距离右侧20px */
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  z-index: 1000; /* 确保按钮在其他内容之上 */
+}
+
+.project-item {
+  display: flex;
+  align-items: left;
+  margin-bottom: 50px;
+}
+
+.project-name {
+  flex-grow: 1;
+}
+
+.view-details-btn {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+.bottom-nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}

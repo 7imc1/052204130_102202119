@@ -1,0 +1,22 @@
+<!--pages/create_project/create_project.wxml-->
+<view class="container">
+  <view class="form-item">
+    <text>项目名称</text>
+    <input type="text" placeholder="请输入项目名称" bindinput="inputProjectName" value="{{projectName}}" />
+  </view>
+  <view class="form-item">
+    <text>项目人数</text>
+    <input type="number" placeholder="请输入项目人数" bindinput="inputProjectNumber" value="{{projectNumber}}" />
+  </view>
+  <view class="form-item">
+    <text>项目描述</text>
+    <textarea placeholder="请输入项目描述" bindinput="inputProjectDescription" value="{{projectDescription}}" />
+  </view>
+  <view class="form-item">
+    <text>项目要求</text>
+    <textarea placeholder="请输入项目要求" bindinput="inputProjectRequirements" value="{{projectRequirements}}" />
+  </view>
+  <view class="form-item">
+    <button bindtap="createProject">创建项目</button>
+  </view>
+</view>

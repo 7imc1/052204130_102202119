@@ -1,0 +1,17 @@
+<!--pages/about_me/about_me.wxml-->
+<view class="container">
+  <block wx:if="{{userInfo}}">
+    <image scr="{{userInfo.faceImg}}"></image>
+    <view>账号：{{userInfo.num}}</view>
+    <view>用户名：{{userInfo.admin}}</view>
+    <view>学校：{{userInfo.school}}</view>
+    <view>专业：{{userInfo.profession}}</view>
+    <view>学号：{{userInfo.No}}</view>    
+    <button bind:tap="toLogin">账号切换</button> 
+  </block>
+</view>
+<view class="bottom-nav">
+    <button bindtap="navigateToHome">主页</button>
+    <button bindtap="navigateToMyProjects">我的项目</button>
+    <button bindtap="navigateToConversations">会话</button>
+</view>

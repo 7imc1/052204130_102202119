@@ -1,0 +1,17 @@
+<!--pages/my_projects/my_projects.wxml-->
+<!-- pages/my_projects/my_projects.wxml -->
+<view class="container">
+  <view class="projects">我的项目</view>
+  <button class="create-project-btn" bindtap="goToCreateProject">创建项目</button>
+  <block wx:if="{{projects}}" wx:key="index">
+    <view class="project-item">
+      <text class="project-name">项目名称：{{projects.name}}</text>
+      <button class="view-details-btn" bindtap="viewDetails" data-index="{{index}}">查看详情</button>
+    </view>
+  </block>
+  <view class="bottom-nav">
+    <button bindtap="navigateToAboutMe">关于我</button>
+    <button bindtap="navigateToHome">主页</button>
+    <button bindtap="navigateToConversations">会话</button>
+  </view>
+</view>

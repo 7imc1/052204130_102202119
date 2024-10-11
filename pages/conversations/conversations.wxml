@@ -1,0 +1,17 @@
+
+<view class="container">
+  <view class="header">会话</view>
+</view>
+
+<view>推荐好友：</view>
+<block wx:for="{{userList}}">
+  <view class="user-List">
+    <view class="left">
+      <image class="face" src="{{item.faceImg}}"></image>
+      <view class="nick-name">{{item.admin}}</view>
+    </view>  
+    <view class="right">添加好友</view>
+  </view>
+</block>
+
+<view>我的好友：</view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="login-title">用户登录</view>
+  <view class="form-item">
+    <text>账号</text>
+    <input type="text" placeholder="请输入账号" bindinput="getZh" value="{{username}}" />
+  </view>
+  <view class="form-item">
+    <text>密码</text>
+    <input type="text" placeholder="请输入密码" bindinput="getPassword" value="{{password}}" />
+  </view>
+  <view class="form-item">
+    <button bindtap="login">登录</button>
+  </view>
+  <view class="extra">
+    <button bindtap="navigateToFindPassword">找回密码</button>
+    <button bindtap="navigateToSignUp">创建账号</button>
+  </view>
+</view>
